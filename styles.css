@@ -1,0 +1,72 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fedcda;
+  background-image: url("./img/love_background1.jpg"); /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  padding: 35px;
+  max-width: 100%;
+}
+.container__1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+}
+.love-calculator {
+  margin-top: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+input[type="text"],
+button {
+  width: calc(
+    100% - 22px
+  ); /* Adjusted width for input fields and buttons to account for padding and border */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  border: none; /* Remove border to make it visually appealing */
+  background: linear-gradient(to right, #ff6b6b, #ffb8b8);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(
+    to right,
+    #da2c2c,
+    #f67070
+  ); /* Darker version of the gradient on hover */
+}
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .container__1 {
+    padding: 10px;
+  }
+}

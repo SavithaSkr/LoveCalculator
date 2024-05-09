@@ -7,7 +7,7 @@ function calculateLove() {
   } else {
     const lovePercentage = Math.floor(Math.random() * 101);
     const result = document.getElementById("result");
-    result.innerHTML = `${name1} and ${name2} 's Love percentage:${lovePercentage}`;
+    result.innerHTML = `${name1} and ${name2} 's Love percentage: ${lovePercentage} %`;
     if (lovePercentage < 30) {
       result.innerHTML += "<br> Not a Greate Match . Keep Looking";
     } else if (lovePercentage >= 30 && lovePercentage < 70) {
