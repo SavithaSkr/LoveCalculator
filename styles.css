@@ -46,6 +46,11 @@ button {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+input[type="text"]:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #ccc; /* Keep the border color unchanged on focus */
+  color: rgb(156, 2, 27); /* Change the text color to pink on focus */
+}
 button {
   border: none; /* Remove border to make it visually appealing */
   background: linear-gradient(to right, #ff6b6b, #ffb8b8);
